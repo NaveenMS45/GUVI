@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auth Workflow || login</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="assets/favicon.ico"
+  </head>
+  <body>
+    <div class="nav-center">
+        <img src="assets/logo.svg" alt='logo' class='logo' />
+    </div>
+
+    <!-- Login Form  -->
+    <form class="form contact-form" action="/php/login.php" method="post">
+        <h5>login</h5>
+        <div class="form-row">
+          <label for="username"  class="form-label">username</label>
+          <input id="username" type="text" name="username" class="form-input username-input" />
+        </div>
+         <!-- <div class="form-row">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input id="email" type="email" name="email" class="form-input inputEmail" />
+        </div> -->
+        <div class="form-row">
+          <label for="password" class="form-label">password</label>
+          <input id="password" type="password" name="password" class="form-input password-input" />
+        </div>
+        <input type="button" class="btn btn-block" value="Sign In" id="login"></input>
+    
+        <p class="bottom">Don't have an account?  <a class="bottom" href="./register.html"> Sign Up here</a></p>
+    </form> 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./js/login.js"></script>
+    </body>
+</html>
